@@ -6,21 +6,21 @@ set of int: TANDA = 1..ntandas; %Conjuntos de sesiones
 
 %array[TANDA] of int : nsesion;
 int: nsesion=19; %maximo de dias posibles de sesiones en 3 semanas:7+7+5
-set of int: SESION = 1..nsesion;
+set of int: SESION = 1..nsesion; 
 array[TANDA,SESION] of int: duracion; %duracion de la sesion en dias
 array[TANDA,SESION] of int: separacionIdeal; %separacion ideal respecto la sesion anterior en dias
-%fecha de la solicitud de la tanda(dia del año por ejemplo)
-array[TANDA] of int: fechaSolicitud;
+array[TANDA] of int: fechaSolicitud; %fecha de la solicitud de la tanda(dia del año por ejemplo)
 
 %objetivo:
 %para cada una de las sesiones a planificar asignar el dia y un dispositivo
 %de manera que minimiza la sesion que se aleje mas de la separacion ideal
 
-array[TANDA,SESION] of var int: diaSesion;%dia asignado a la sesion
+array[TANDA,SESION] of var int: diaSesion; %dia asignado a la sesion
 array[TANDA,SESION] of var DISP: disp;
-% var int: diferenciaIdeal=forall(i in SESION, j in TANDA, abs(fechaSolicitud[j]-disSesion[TANDA,SESION])); 
+%var int: diferenciaIdeal=forall(i in SESION, j in TANDA, abs(fechaSolicitud[j]-disSesion[TANDA,SESION])); 
 %minimizar sesiones que se aleje mucho de la separacion ideal
 %solve minimize diferenciaIdeal;
+
 
 %restricciones:
 %dia sesion+ su duracion <= sesion2 -separacioideal de sesion2
