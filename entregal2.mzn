@@ -1,6 +1,6 @@
 include "globals.mzn";
 
-int: CAPACITY = (12 * 60) / 15; % capacidad diaria de cada LINAC (en intervalos de 15 minutos)
+int: CAPACITY = (12 * 60) div 15; % capacidad diaria de cada LINAC (en intervalos de 15 minutos)
 set of int: DAY = 1..7 * 3; % días en tres semanas
 
 int: m; % número de LINACs
@@ -25,4 +25,15 @@ array[PACIENTE, SESION] of int: duracion;
 % La primera columna se refiere al día de la solicitud.
 array[PACIENTE, SESION] of int: separacion;
 
+%variable de decision
+array[PACIENTE, SESION] of var int: desvio;%diferencia entre el valor del array de separacion y el dia ideal
+
+solve minimize sum (i in PACIENTE, j in SESION)(desvio[i,j]);
+
 % Add constraints and optimization goals below as needed.
+constraint forall(i in PACIENTE)(separacion[i,1]<=8); %1r sesion menor que 8 dias
+constraint forall(i in PACIENTE, j in SESION)(desvio[i,j]>=0);%el valor debe ser mayor que 0
+constraint forall(i in PACIENTE, j in SESION)(duracion[i,j]>=0);%el valor debe ser mayor que 0
+constraint forall(i in PACIENTE, j in SESION)(separacion[i,j]>=0);%el valor debe ser mayor que 0
+
+%dia sesion+ su duracion <= sesion2 -separacioideal de sesion2
