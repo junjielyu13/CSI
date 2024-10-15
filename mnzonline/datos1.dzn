@@ -1,0 +1,28 @@
+% Número de LINACs
+m = 3;
+
+% Capacidad diaria de cada LINAC (en intervalos de 15 minutos)
+disponible = [| 2, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+              | 2, 0, 0, 3, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+              | 2, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, |];
+
+% Número de nuevos pacientes
+pac = 3;
+
+% Día laborable en que se hizo la solicitud (1=lunes, 5=viernes)
+solicitud = [1, 2, 3];
+
+% Número de sesiones por paciente
+sesion = 3;
+
+% Duración de cada sesión (en múltiplos de 15 minutos)
+duracion = 
+ [| 2, 2, 2
+  | 3, 2, 3 
+  | 3, 2, 3 |];
+
+% Número de días de separación ideal entre sesiones
+separacion = 
+ [| 2, 2, 3
+  | 3, 2, 4
+  | 3, 2, 4|];
