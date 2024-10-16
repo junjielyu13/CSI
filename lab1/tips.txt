@@ -1,0 +1,27 @@
+.Buenos días,
+
+Estaba haciendo la practica y os quiero hacer algunas aclaraciones:
+
+1. Daos cuenta que en este problema la unidad de tiempo es el "cuarto de hora" y por lo tanto la matriz "disponibilidad" viene dada en esta unidad
+
+2. La matriz "disponibilidad" ya ha descontado los 15' posteriores necesarios de cada una de las sesiones que incluye
+
+3. El enunciado no lo dice pero un paciente no puede tener dos sesiones el mismo dia. Es decir el dia en que se le hace una sesión ha de ser estrictamente mayor que el día de la sesion anterior
+
+4. Como la primera columna de la matriz "separación" era redundante respecto al vector "solicitud" la vamos a eliminar cambiando su formato a:
+
+array[PACIENTE, 2..s] of int = separacion;
+
+5. la distancia entre el dia de la solicitud y la primera sesion no interviene en la funcion objetivo
+
+6. Os puede ser util definir variables auxiliares que simplifiquen algunas expresiones (mirad en los apuntes el ejemplo de los turnos de las enfermeras)
+
+
+
+La reformulación de la función objetivo no era muy clara porque confundía tandas  y sesiones. La he arreglado:
+
+Reformulacion de la funcion objetivo con un poco mas de pre-cision. Considera una asignacion de sesiones de tandas. El desv¿o de una sesión es el numero de d¿as que se aleja (por delante o por detr'as) de la separacion ideal sugerida por el medico. El desv¿o del paciente es el desv¿o m'aximo de entre todas sus sesiones. El desv¿o de la asignacion global es el maximo de los desv¿os de los pacientes.
+
+Queremos encontrar la asignacion con desv¿o m'¿nimo
+
+Daos cuenta que la disponibilidad de los linacs de los ultimos 7 dias (tercera semana) ha de ser 12*60/15 porque no puede haber sesiones comprometidas previamente. Es decir, en la tercera semana los linacs estan totalmente libres
