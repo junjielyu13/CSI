@@ -24,11 +24,13 @@ array[LINAC,DAY] of var 0..CAPACITY: tiempoOcupada; %tiempo ocupada a un dia y l
 array[PACIENTE, SESION] of var int: desvioPaciente; %desvio de cada sesion del paciente
 array[PACIENTE] of var int: desvioPacienteMax; %desvio maximo de cada tanda del paciente
 
-% Add constraints and optimization goals below as needed.
 %restricciones para los parametros de entrada
 constraint forall(i in PACIENTE, j in SESION)(duracion[i,j]>0); %el valor debe ser mayor que 0
 constraint forall(i in PACIENTE, j in 2..sesion)(separacion[i,j]>0); %el valor debe ser mayor que 0
-constraint forall(d in DAY, l in LINAC where d>=15)(disponible[d,l]=48); %3r semana debe estar totalmente libre para cualquier LINAC
+constraint forall(d in DAY, l in LINAC where d>=15)(disponible[l,d]=48); %3r semana debe estar totalmente libre para cualquier LINAC
+%repartir las sesiones entre todos los LINACs de manera equitativa
+%constraint abs((sum(p in PACIENTE, s in SESION)(linac[p,s])/card(linac[p,s]))-m/2) <= 1;
+
 % la primera sesion debe estar planificada antes de 8 dias despues de la solicitud
 constraint forall(p in PACIENTE)(diaAsignado[p,1] <= solicitud[p]+8); 
 
@@ -37,7 +39,7 @@ constraint forall(p in PACIENTE, s in 1..sesion-1)(diaAsignado[p,s]<diaAsignado[
 
 %Asignacion para la variable tiempoOcupada
 constraint forall(d in DAY, l in LINAC)
-(tiempoOcupada[l,d]=sum(p in PACIENTE, s in SESION where diaAsignado[p,s]=d /\ linac[p,s]=l)(duracion[p,s]));
+(tiempoOcupada[l,d]=sum(p in PACIENTE, s in SESION where diaAsignado[p,s]=d /\ linac[p,s]=l)(duracion[p,s]+1));
 
 % el tiempo ocupado por un dia y linac determinado es menor que la disponibilidad correspondiente
 constraint forall(d in DAY, l in LINAC)(tiempoOcupada[l,d] <= disponible[l,d]);
