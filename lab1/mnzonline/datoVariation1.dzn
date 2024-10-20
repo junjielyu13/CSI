@@ -1,0 +1,31 @@
+
+% Número de LINACs
+m = 3;
+
+% Capacidad diaria de cada LINAC (en intervalos de 15 minutos)
+disponible = [| 2, 4, 3, 4, 5, 6, 3,   8, 12, 10, 10, 12, 14, 14,   48, 48, 48, 48, 48, 48, 48
+              | 2, 3, 2, 4, 6, 5, 4,   8, 14, 12, 10, 12, 12, 14,   48, 48, 48, 48, 48, 48, 48
+              | 3, 3, 2, 4, 5, 5, 5,   6, 12, 11, 12, 12, 10, 12,   48, 48, 48, 48, 48, 48, 48 |];
+
+% Número de nuevos pacientes
+paciente = 4;
+
+% Día laborable en que se hizo la solicitud (1=lunes, 5=viernes)
+solicitud = [1, 3, 4, 5];
+
+% Número de sesiones por paciente
+sesion = 4;
+
+% Duración de cada sesión (en múltiplos de 15 minutos)
+duracion = 
+ [| 2, 3, 2, 2
+  | 3, 3, 2, 3
+  | 3, 4, 3, 2
+  | 2, 2, 3, 2 |];
+
+% Número de días de separación ideal entre sesiones
+separacion = array2d(1..paciente, 2..sesion, 
+  [ 2, 3, 2,
+    2, 4, 3,
+    2, 5, 2,
+    1, 2, 3]);
