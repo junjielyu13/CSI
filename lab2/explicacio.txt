@@ -1,0 +1,11 @@
+Para n equipos:
+
+Primero habra 1 variable de  final,  2 variables de semifinales y 4 variables de quarters, etc
+
+En segundo lugar, el numero de estados de cada variable depende del numero de variables: el numero de estados de una variable es n entre el numero de variables que tiene. 
+La variable final habra n estados, luego, en el semifinal habria n/2 ya que hay 2 variables
+semifinales. Succesivamente en los quarters habra n/4 estados porque hay 4 variables 
+de quarters.
+
+Las conexiones de dependencia es similar, cada variable esta aseñalado(flecha de dependencia) por dos variables anteriores. Por ejemplo, el final es señalado por 2 semifinales,
+los semifinales son aseñalados cada uno por 2 quarters.
