@@ -1,0 +1,141 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@5a207aa0";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@3f569e2";
+	node_size = (130 55);
+}
+
+node PuntosE1
+{
+	states = ("P0" "P1" "P2" );
+	position = (683 -438);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "PuntosE1";
+	excludepolicy = "include whole CPT";
+}
+node PuntosE2
+{
+	states = ("P0" "P1" "P2" );
+	position = (494 -258);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "PuntosE2";
+	excludepolicy = "include whole CPT";
+}
+node P_2vs3
+{
+	states = ("Gana3" "Gana2" );
+	position = (655 -55);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P_2vs3";
+	excludepolicy = "include whole CPT";
+}
+node PuntosE3
+{
+	states = ("P0" "P1" "P2" );
+	position = (861 -254);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "PuntosE3";
+	excludepolicy = "include whole CPT";
+}
+node EquipoGanador
+{
+	states = ("E1" "E2" "E3" );
+	position = (677 -254);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable1";
+	label = "EquipoGanador";
+	excludepolicy = "include whole CPT";
+}
+node P_1vs3
+{
+	states = ("Gana1" "Gana3" );
+	position = (993 -433);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P_1vs3";
+	excludepolicy = "include whole CPT";
+}
+node P_1vs2
+{
+	states = ("Gana1" "Gana2" );
+	position = (379 -444);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P_1vs2";
+	excludepolicy = "include whole CPT";
+}
+potential ( PuntosE1 | P_1vs2 P_1vs3 )
+{
+	data = (((	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	))
+		((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	)));
+}
+potential ( PuntosE2 | P_1vs2 P_2vs3 )
+{
+	data = (((	1.0	0.0	0.0	)
+		(	0.0	1.0	0.0	))
+		((	0.0	1.0	0.0	)
+		(	0.0	0.0	1.0	)));
+}
+potential ( P_2vs3 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( PuntosE3 | P_1vs3 P_2vs3 )
+{
+	data = (((	0.0	1.0	0.0	)
+		(	1.0	0.0	0.0	))
+		((	0.0	0.0	1.0	)
+		(	0.0	1.0	0.0	)));
+}
+potential ( EquipoGanador | PuntosE3 PuntosE1 PuntosE2 )
+{
+	data = ((((	0.334	0.333	0.333	)
+		(	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	))
+		((	1.0	0.0	0.0	)
+		(	0.5	0.5	0.0	)
+		(	0.0	1.0	0.0	))
+		((	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.5	0.0	)))
+		(((	0.0	0.0	1.0	)
+		(	0.0	0.5	0.5	)
+		(	0.0	1.0	0.0	))
+		((	0.5	0.0	0.5	)
+		(	0.333	0.333	0.334	)
+		(	0.0	1.0	0.0	))
+		((	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	)
+		(	0.5	0.5	0.0	)))
+		(((	0.0	0.0	1.0	)
+		(	0.0	0.0	1.0	)
+		(	0.0	0.5	0.5	))
+		((	0.0	0.0	1.0	)
+		(	0.0	0.0	1.0	)
+		(	0.0	0.5	0.5	))
+		((	0.5	0.0	0.5	)
+		(	0.5	0.0	0.5	)
+		(	0.333	0.334	0.333	))));
+}
+potential ( P_1vs3 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( P_1vs2 | )
+{
+	data = (	0.5	0.5	);
+}

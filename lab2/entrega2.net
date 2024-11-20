@@ -1,14 +1,82 @@
 net
 {
-	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@27792497";
-	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@1d35d370";
 	node_size = (130.0 55.0);
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@2f40d995";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@410eddf1";
 }
 
+node P1v4
+{
+	states = ("Win1" "Win4" );
+	position = (978 -472);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P1v4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node P1v3
+{
+	states = ("Win1" "Win3" );
+	position = (882 -272);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P1v3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node Ganador
+{
+	states = ("E1" "E2" "E3" "E4" );
+	position = (507 -677);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "Ganador";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node E3
+{
+	states = ("P0" "P1" "P2" "P3" );
+	position = (719 -357);
+	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
+	ismapvariable = "false";
+	ID = "variable4";
+	label = "E3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node P2v3
+{
+	states = ("Win3" "Win2" );
+	position = (544 -290);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P2v3";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
+node P1v2
+{
+	states = ("Win1" "Win2" );
+	position = (710 -118);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P1v2";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
 node P2v4
 {
 	states = ("Win4" "Win2" );
-	position = (133 -339);
+	position = (383 -486);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable0";
@@ -16,10 +84,21 @@ node P2v4
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
+node P3v4
+{
+	states = ("Win3" "Win4" );
+	position = (719 -462);
+	diagnosistype = "AUXILIARY";
+	ismapvariable = "false";
+	ID = "variable0";
+	label = "P3v4";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+}
 node E1
 {
-	states = ("Win" "Lose" );
-	position = (836 -49);
+	states = ("P0" "P1" "P2" "P3" );
+	position = (1038 -184);
 	diagnosistype = "AUXILIARY";
 	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
@@ -28,114 +107,62 @@ node E1
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
-node P1v3
-{
-	states = ("Win1" "Win3" );
-	position = (630 -152);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "P1v3";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node P1v4
-{
-	states = ("Win1" "Win4" );
-	position = (771 -331);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "P1v4";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node P3v4
-{
-	states = ("Win3" "Win4" );
-	position = (442 -328);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "P3v4";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node P2v3
-{
-	states = ("Win3" "Win2" );
-	position = (241 -145);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "P2v3";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
 node E4
 {
-	states = ("Win" "Lose" );
-	position = (443 -460);
+	states = ("P0" "P1" "P2" "P3" );
+	position = (714 -597);
 	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
 	ID = "variable4";
 	label = "E4";
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
-node E3
-{
-	states = ("Win" "Lose" );
-	position = (445 -198);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable4";
-	label = "E3";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node P1v2
-{
-	states = ("Win1" "Win2" );
-	position = (472 -1);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable0";
-	label = "P1v2";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
 node E2
 {
-	states = ("Win" "Lose" );
-	position = (82 -83);
+	states = ("P0" "P1" "P2" "P3" );
+	position = (358 -213);
 	diagnosistype = "AUXILIARY";
+	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
 	ID = "variable4";
 	label = "E2";
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
-potential ( P2v4 | )
+potential ( P1v4 | )
 {
 	data = (	0.5	0.5	);
-}
-potential ( E1 | P1v2 P1v3 P1v4 )
-{
-	data = ((((	1.0	0.0	)
-		(	0.66	0.34	))
-		((	0.66	0.34	)
-		(	0.33	0.67	)))
-		(((	0.66	0.34	)
-		(	0.33	0.67	))
-		((	0.33	0.67	)
-		(	0.0	1.0	))));
 }
 potential ( P1v3 | )
 {
 	data = (	0.5	0.5	);
 }
-potential ( P1v4 | )
+potential ( Ganador | )
+{
+	data = (	0.4962500000000001	0.5037499999999999	0.0	0.0	);
+}
+potential ( E3 | P3v4 P2v3 P1v3 )
+{
+	data = ((((	0.0	0.0	1.0	0.0	)
+		(	0.0	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	0.0	)
+		(	0.0	0.0	1.0	0.0	)))
+		(((	0.0	1.0	0.0	0.0	)
+		(	0.0	0.0	1.0	0.0	))
+		((	1.0	0.0	0.0	0.0	)
+		(	0.0	1.0	0.0	0.0	))));
+}
+potential ( P2v3 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( P1v2 | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( P2v4 | )
 {
 	data = (	0.5	0.5	);
 }
@@ -143,44 +170,36 @@ potential ( P3v4 | )
 {
 	data = (	0.5	0.5	);
 }
-potential ( P2v3 | )
+potential ( E1 | P1v2 P1v3 P1v4 )
 {
-	data = (	0.5	0.5	);
+	data = ((((	0.0	0.0	0.0	1.0	)
+		(	0.0	0.0	1.0	0.0	))
+		((	0.0	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	0.0	)))
+		(((	0.0	0.0	1.0	0.0	)
+		(	0.0	1.0	0.0	0.0	))
+		((	0.0	1.0	0.0	0.0	)
+		(	1.0	0.0	0.0	0.0	))));
 }
-potential ( E4 | P1v4 P2v4 P3v4 )
+potential ( E4 | P3v4 P2v4 P1v4 )
 {
-	data = ((((	0.33	0.67	)
-		(	0.66	0.34	))
-		((	0.0	1.0	)
-		(	0.33	0.67	)))
-		(((	0.66	0.34	)
-		(	1.0	0.0	))
-		((	0.33	0.67	)
-		(	0.66	0.34	))));
-}
-potential ( E3 | P1v3 P2v3 P3v4 )
-{
-	data = ((((	0.66	0.34	)
-		(	0.33	0.67	))
-		((	0.33	0.67	)
-		(	0.0	1.0	)))
-		(((	1.0	0.0	)
-		(	0.66	0.34	))
-		((	0.66	0.34	)
-		(	0.33	0.67	))));
-}
-potential ( P1v2 | )
-{
-	data = (	0.5	0.5	);
+	data = ((((	0.0	1.0	0.0	0.0	)
+		(	0.0	0.0	1.0	0.0	))
+		((	1.0	0.0	0.0	0.0	)
+		(	0.0	1.0	0.0	0.0	)))
+		(((	0.0	0.0	1.0	0.0	)
+		(	0.0	0.0	0.0	1.0	))
+		((	0.0	1.0	0.0	0.0	)
+		(	0.0	0.0	1.0	0.0	))));
 }
 potential ( E2 | P1v2 P2v3 P2v4 )
 {
-	data = ((((	0.0	1.0	)
-		(	0.33	0.67	))
-		((	0.33	0.67	)
-		(	0.66	0.34	)))
-		(((	0.33	0.67	)
-		(	0.66	0.34	))
-		((	0.66	0.34	)
-		(	1.0	0.0	))));
+	data = ((((	1.0	0.0	0.0	0.0	)
+		(	0.0	1.0	0.0	0.0	))
+		((	0.0	1.0	0.0	0.0	)
+		(	0.0	0.0	1.0	0.0	)))
+		(((	0.0	1.0	0.0	0.0	)
+		(	0.0	0.0	1.0	0.0	))
+		((	0.0	0.0	1.0	0.0	)
+		(	0.0	0.0	0.0	1.0	))));
 }
