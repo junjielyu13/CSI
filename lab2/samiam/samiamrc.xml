@@ -1,8 +1,8 @@
 <SamiamPreferences>
-	<DefaultPath>C:\Users\Xinlei Lin\Downloads\github upc\CSI\lab2</DefaultPath>
+	<DefaultPath>C:\Users\xinle\Documents\UPCgithub\CSI\lab2</DefaultPath>
 	<FileExtension>.net</FileExtension>
 	<SecondsPerRCCall>2.018421361862025E-6</SecondsPerRCCall>
-	<RecentDocuments>C:\Users\xinle\Downloads\upc github\CSI\lab2\entrega1.net;C:\Users\xinle\Downloads\upc github\CSI\lab2\entrega2.net;C:\Users\Xinlei Lin\Downloads\github upc\CSI\lab2\entrega2_v2.net;C:\Users\Xinlei Lin\Downloads\github upc\CSI\lab2\entrega2.net;</RecentDocuments>
+	<RecentDocuments>C:\Users\Xinlei Lin\Downloads\github upc\CSI\lab2\entrega2_v2.net;C:\Users\Xinlei Lin\Downloads\github upc\CSI\lab2\entrega2.net;C:\Users\xinle\Documents\UPCgithub\CSI\lab2\samiam\entrega2_3.net;C:\Users\xinle\Documents\UPCgithub\CSI\lab2\entrega3.net;</RecentDocuments>
 	<Algorithm>propagationenginegenerator1791944048146838126L</Algorithm>
 	<Property key="visiblestatusbar">true</Property>
 	<Property key="orientationinstantiationclipboardtoolbar">1</Property>
@@ -67,7 +67,7 @@
 	</PreferenceGroup>
 	<PreferenceGroup name="Inference">
 		<pref class="edu.ucla.belief.ui.preference.IntegerPreference" key="inferenceMinFillRepetitions" value="7" name="Min fill, best of N repetitions" />
-		<pref class="edu.ucla.belief.ui.preference.IntegerPreference" key="inferenceMinFillSeed" value="75363230" name="Min fill, new random seed (not saved)" />
+		<pref class="edu.ucla.belief.ui.preference.IntegerPreference" key="inferenceMinFillSeed" value="20977856" name="Min fill, new random seed (not saved)" />
 		<pref class="edu.ucla.belief.ui.preference.BooleanPreference" key="inferenceMAPExplorerFullScreenWidth" value="true" name="MAP Solution Explorer, maximize width" />
 		<pref class="edu.ucla.belief.ui.preference.BooleanPreference" key="askBeforeCPTCopy" value="true" name="Ask before modifying cpt (cpt copy tool)" />
 		<pref class="edu.ucla.belief.ui.preference.EnumPreference$Caste" key="inferenceCaste" value="retard" name="User level (cpt copy tool)" />
