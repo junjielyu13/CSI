@@ -67,7 +67,7 @@
 	</PreferenceGroup>
 	<PreferenceGroup name="Inference">
 		<pref class="edu.ucla.belief.ui.preference.IntegerPreference" key="inferenceMinFillRepetitions" value="7" name="Min fill, best of N repetitions" />
-		<pref class="edu.ucla.belief.ui.preference.IntegerPreference" key="inferenceMinFillSeed" value="311876356" name="Min fill, new random seed (not saved)" />
+		<pref class="edu.ucla.belief.ui.preference.IntegerPreference" key="inferenceMinFillSeed" value="1950225340" name="Min fill, new random seed (not saved)" />
 		<pref class="edu.ucla.belief.ui.preference.BooleanPreference" key="inferenceMAPExplorerFullScreenWidth" value="true" name="MAP Solution Explorer, maximize width" />
 		<pref class="edu.ucla.belief.ui.preference.BooleanPreference" key="askBeforeCPTCopy" value="true" name="Ask before modifying cpt (cpt copy tool)" />
 		<pref class="edu.ucla.belief.ui.preference.EnumPreference$Caste" key="inferenceCaste" value="retard" name="User level (cpt copy tool)" />
