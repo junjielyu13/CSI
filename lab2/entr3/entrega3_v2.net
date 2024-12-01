@@ -8,7 +8,7 @@ net
 node Partido6v7
 {
 	states = ("E7" "E6" );
-	position = (697 -454);
+	position = (536 -426);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -16,21 +16,10 @@ node Partido6v7
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
-node J1PuntosE7
-{
-	states = ("P0" "P1" );
-	position = (233 -701);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "J1PuntosE7";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
 node J1PuntosE6
 {
 	states = ("P0" "P1" );
-	position = (223 -608);
+	position = (226 -613);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -41,7 +30,7 @@ node J1PuntosE6
 node J2PuntosE5
 {
 	states = ("P0" "P1" "P2" );
-	position = (494 -518);
+	position = (394 -514);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -52,7 +41,7 @@ node J2PuntosE5
 node J3PuntosE4
 {
 	states = ("P0" "P1" "P2" );
-	position = (707 -306);
+	position = (572 -290);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -63,7 +52,7 @@ node J3PuntosE4
 node J2PuntosE7
 {
 	states = ("P0" "P1" );
-	position = (500 -703);
+	position = (400 -699);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -74,7 +63,7 @@ node J2PuntosE7
 node J3PuntosE3
 {
 	states = ("P0" "P1" "P2" );
-	position = (718 -217);
+	position = (567 -196);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -85,44 +74,11 @@ node J3PuntosE3
 node Partido3v4
 {
 	states = ("E4" "E3" );
-	position = (662 -48);
+	position = (527 -14);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
 	label = "Partido3v4";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node J1PuntosE4
-{
-	states = ("P0" "P1" );
-	position = (213 -303);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "J1PuntosE4";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node J2PuntosE3
-{
-	states = ("P0" "P1" );
-	position = (490 -214);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "J2PuntosE3";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
-node J3PuntosE2
-{
-	states = ("P0" "P1" "P2" );
-	position = (707 -127);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "J3PuntosE2";
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
@@ -140,7 +96,7 @@ node J1PuntosE5
 node Partido5v6
 {
 	states = ("E5" "E6" );
-	position = (161 -431);
+	position = (157 -431);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -151,7 +107,7 @@ node Partido5v6
 node Semifinal2
 {
 	states = ("E5" "E6" "E7" "E8" );
-	position = (1090 -478);
+	position = (937 -468);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -162,7 +118,7 @@ node Semifinal2
 node Partido5v7
 {
 	states = ("E5" "E7" );
-	position = (455 -439);
+	position = (350 -419);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -173,7 +129,7 @@ node Partido5v7
 node GanadorLiga1
 {
 	states = ("E2" "E3" "E4" );
-	position = (908 -230);
+	position = (734 -123);
 	diagnosistype = "AUXILIARY";
 	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
@@ -185,7 +141,7 @@ node GanadorLiga1
 node J2PuntosE4
 {
 	states = ("P0" "P1" );
-	position = (493 -308);
+	position = (395 -284);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -196,7 +152,7 @@ node J2PuntosE4
 node Partido2v3
 {
 	states = ("E2" "E3" );
-	position = (163 -41);
+	position = (88 -30);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -207,7 +163,7 @@ node Partido2v3
 node J2PuntosE2
 {
 	states = ("P0" "P1" "P2" );
-	position = (488 -133);
+	position = (378 -112);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -218,7 +174,7 @@ node J2PuntosE2
 node GanadorLiga2
 {
 	states = ("E5" "E6" "E7" );
-	position = (917 -589);
+	position = (750 -518);
 	diagnosistype = "AUXILIARY";
 	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
@@ -230,7 +186,7 @@ node GanadorLiga2
 node J3PuntosE6
 {
 	states = ("P0" "P1" "P2" );
-	position = (744 -609);
+	position = (572 -611);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -241,7 +197,7 @@ node J3PuntosE6
 node J1PuntosE3
 {
 	states = ("P0" "P1" );
-	position = (217 -212);
+	position = (190 -193);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -252,7 +208,7 @@ node J1PuntosE3
 node Semifinal1
 {
 	states = ("E1" "E2" "E3" "E4" );
-	position = (1061 -277);
+	position = (915 -216);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -263,7 +219,7 @@ node Semifinal1
 node Partido2v4
 {
 	states = ("E2" "E4" );
-	position = (408 -47);
+	position = (362 -17);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -271,21 +227,10 @@ node Partido2v4
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
-node J3PuntosE5
-{
-	states = ("P0" "P1" "P2" );
-	position = (741 -524);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "J3PuntosE5";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
 node G
 {
 	states = ("e1" "e2" "e3" "e4" "e5" "e6" "e7" "e8" );
-	position = (1232 -373);
+	position = (1055 -321);
 	diagnosistype = "AUXILIARY";
 	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
@@ -297,7 +242,7 @@ node G
 node J1PuntosE2
 {
 	states = ("P0" "P1" );
-	position = (200 -133);
+	position = (186 -109);
 	diagnosistype = "AUXILIARY";
 	DSLxSUBMODEL = "Root Submodel";
 	ismapvariable = "false";
@@ -306,21 +251,10 @@ node J1PuntosE2
 	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
 	excludepolicy = "include whole CPT";
 }
-node J2PuntosE6
-{
-	states = ("P0" "P1" );
-	position = (500 -608);
-	diagnosistype = "AUXILIARY";
-	ismapvariable = "false";
-	ID = "variable1";
-	label = "J2PuntosE6";
-	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
-	excludepolicy = "include whole CPT";
-}
 node J3PuntosE7
 {
 	states = ("P0" "P1" "P2" );
-	position = (742 -701);
+	position = (569 -702);
 	diagnosistype = "AUXILIARY";
 	ismapvariable = "false";
 	ID = "variable1";
@@ -331,10 +265,6 @@ node J3PuntosE7
 potential ( Partido6v7 | )
 {
 	data = (	0.14	0.86	);
-}
-potential ( J1PuntosE7 | )
-{
-	data = (	1.0	0.0	);
 }
 potential ( J1PuntosE6 | Partido5v6 )
 {
@@ -355,14 +285,12 @@ potential ( J3PuntosE4 | J2PuntosE4 Partido3v4 )
 		((	0.0	0.0	1.0	)
 		(	0.0	1.0	0.0	)));
 }
-potential ( J2PuntosE7 | J1PuntosE7 Partido5v7 )
+potential ( J2PuntosE7 | Partido5v7 )
 {
-	data = (((	1.0	0.0	)
-		(	0.0	1.0	))
-		((	0.0	1.0	)
-		(	0.0	1.0	)));
+	data = ((	0.5	0.5	)
+		(	0.0	1.0	));
 }
-potential ( J3PuntosE3 | J2PuntosE3 Partido3v4 )
+potential ( J3PuntosE3 | Partido3v4 J1PuntosE3 )
 {
 	data = (((	1.0	0.0	0.0	)
 		(	0.0	1.0	0.0	))
@@ -372,21 +300,6 @@ potential ( J3PuntosE3 | J2PuntosE3 Partido3v4 )
 potential ( Partido3v4 | )
 {
 	data = (	0.64	0.36	);
-}
-potential ( J1PuntosE4 | )
-{
-	data = (	1.0	0.0	);
-}
-potential ( J2PuntosE3 | J1PuntosE3 )
-{
-	data = ((	1.0	0.0	)
-		(	0.0	1.0	));
-}
-potential ( J3PuntosE2 | J2PuntosE2 )
-{
-	data = ((	1.0	0.0	0.0	)
-		(	0.0	1.0	0.0	)
-		(	0.0	0.0	1.0	));
 }
 potential ( J1PuntosE5 | Partido5v6 )
 {
@@ -407,7 +320,7 @@ potential ( Partido5v7 | )
 {
 	data = (	0.667	0.333	);
 }
-potential ( GanadorLiga1 | J3PuntosE2 J3PuntosE3 J3PuntosE4 )
+potential ( GanadorLiga1 | J3PuntosE3 J3PuntosE4 J2PuntosE2 )
 {
 	data = ((((	0.333	0.333	0.334	)
 		(	0.0	0.0	1.0	)
@@ -437,12 +350,10 @@ potential ( GanadorLiga1 | J3PuntosE2 J3PuntosE3 J3PuntosE4 )
 		(	0.5	0.5	0.0	)
 		(	0.333	0.333	0.334	))));
 }
-potential ( J2PuntosE4 | J1PuntosE4 Partido2v4 )
+potential ( J2PuntosE4 | Partido2v4 )
 {
-	data = (((	1.0	0.0	)
-		(	0.0	1.0	))
-		((	0.0	1.0	)
-		(	0.0	1.0	)));
+	data = ((	0.5	0.5	)
+		(	0.0	1.0	));
 }
 potential ( Partido2v3 | )
 {
@@ -455,7 +366,7 @@ potential ( J2PuntosE2 | J1PuntosE2 Partido2v4 )
 		((	0.0	0.0	1.0	)
 		(	0.0	1.0	0.0	)));
 }
-potential ( GanadorLiga2 | J3PuntosE5 J3PuntosE6 J3PuntosE7 )
+potential ( GanadorLiga2 | J3PuntosE6 J3PuntosE7 J2PuntosE5 )
 {
 	data = ((((	0.333	0.333	0.334	)
 		(	0.0	0.0	1.0	)
@@ -485,7 +396,7 @@ potential ( GanadorLiga2 | J3PuntosE5 J3PuntosE6 J3PuntosE7 )
 		(	0.5	0.5	0.0	)
 		(	0.333	0.333	0.334	))));
 }
-potential ( J3PuntosE6 | J2PuntosE6 Partido6v7 )
+potential ( J3PuntosE6 | Partido6v7 J1PuntosE6 )
 {
 	data = (((	1.0	0.0	0.0	)
 		(	0.0	1.0	0.0	))
@@ -506,12 +417,6 @@ potential ( Semifinal1 | GanadorLiga1 )
 potential ( Partido2v4 | )
 {
 	data = (	0.3	0.7	);
-}
-potential ( J3PuntosE5 | J2PuntosE5 )
-{
-	data = ((	1.0	0.0	0.0	)
-		(	0.0	1.0	0.0	)
-		(	0.0	0.0	1.0	));
 }
 potential ( G | Semifinal1 Semifinal2 )
 {
@@ -536,11 +441,6 @@ potential ( J1PuntosE2 | Partido2v3 )
 {
 	data = ((	0.0	1.0	)
 		(	1.0	0.0	));
-}
-potential ( J2PuntosE6 | J1PuntosE6 )
-{
-	data = ((	1.0	0.0	)
-		(	0.0	1.0	));
 }
 potential ( J3PuntosE7 | J2PuntosE7 Partido6v7 )
 {
